@@ -1,0 +1,7 @@
+rm -f 0-current_working_directory
+
+pkg install nano+ X#!/bin/bash
+pwd
++O#!/bin/bash
+pwd
+pwd
