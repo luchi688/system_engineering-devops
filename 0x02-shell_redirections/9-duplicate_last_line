@@ -1,2 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Duplicates the last line of iacta (task-9)
+
 tail -n 1 iacta >> iacta
