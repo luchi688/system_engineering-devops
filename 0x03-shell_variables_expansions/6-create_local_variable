@@ -1,0 +1,7 @@
+#!/bin/bash
+
+create_variable() {
+    local BEST="School"
+    export BEST  # Optional if you want it available after sourcing
+}
+create_variable
