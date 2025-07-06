@@ -1,7 +1,3 @@
-#!/bin/bash
-
-create_variable() {
-    local BEST="School"
-    export BEST  # Optional if you want it available after sourcing
-}
-create_variable
+#!/usr/bin/env bash
+# Creates a local variable BEST with the value "School"
+BEST="School"
