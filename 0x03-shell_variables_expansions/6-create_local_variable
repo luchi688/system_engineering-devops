@@ -1,3 +1,2 @@
-#!/usr/bin/env bash
-# Creates a local variable BEST with the value "School"
-BEST="School"
+#!/bin/bash
+local BEST="School"
