@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((TRUEKNOWLEDGE / POWER))
+echo $((TRUEKNOWLEDGE + 128))
