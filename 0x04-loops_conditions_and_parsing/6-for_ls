@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
-# Script that lists all files and directories in the current directory
+#!/bin/bash
+# Script that lists files in the current directory
 
-for file in *; do
-  echo "$file"
+for item in *; do
+    echo "$item"
 done
