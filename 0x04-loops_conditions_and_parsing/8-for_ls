@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script lists non-hidden files and displays only the part after the first dash
+# This script lists all visible files and prints only the part after the first dash
 
 for file in *-*; do
   echo "${file#*-}"
