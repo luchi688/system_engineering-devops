@@ -1,6 +1,6 @@
-#!/bin/bash
-# Script that lists files in the current directory
+#!/usr/bin/env bash
+# Script that lists files in the current directory using a for loop
 
-for item in *; do
-    echo "$item"
+for item in ./*; do
+    echo "${item#./}"
 done
