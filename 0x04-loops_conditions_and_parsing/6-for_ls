@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# This script lists content of the current directory safely
+# Script that lists all files and directories in the current directory
 
-for item in ./*; do
-  [ -e "$item" ] && echo "${item#./}"
+for file in *; do
+  echo "$file"
 done
