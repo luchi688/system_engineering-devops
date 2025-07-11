@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script lists content of the current directory safely
+
+for item in ./*; do
+  [ -e "$item" ] && echo "${item#./}"
+done
