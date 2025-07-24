@@ -1,18 +1,26 @@
+<<<<<<< HEAD
 #!/usr/bin/env bash
 # This script checks for the existence, type, and size of the file named 'school'
+=======
+#!/bin/bash
+>>>>>>> ae85f78 (Add task 0: Display script PID)
 
-if [ -e "school" ]; then
+# Check if the file "school" exists
+if [ -e school ]; then
     echo "school file exists"
 
-    if [ ! -s "school" ]; then
+    # Check if file is empty
+    if [ ! -s school ]; then
         echo "school file is empty"
     else
         echo "school file is not empty"
     fi
 
-    if [ -f "school" ]; then
+    # Check if file is a regular file
+    if [ -f school ]; then
         echo "school is a regular file"
     fi
+
 else
     echo "school file does not exist"
 fi

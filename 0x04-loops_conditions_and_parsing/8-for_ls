@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
+<<<<<<< HEAD
 # List non-hidden regular files with dash, excluding this script itself
 
 script_name=$(basename "$0")
 
 for file in *; do
     if [[ -f "$file" && "$file" == *-* && "$file" != "$script_name" ]]; then
+=======
+# This script lists non-hidden files and shows only the part after the first dash, if dash exists
+
+for file in *; do
+    # Ignore hidden files and only work with regular files that contain a dash
+    if [[ -f "$file" && "$file" == *-* ]]; then
+>>>>>>> ae85f78 (Add task 0: Display script PID)
         echo "${file#*-}"
     fi
 done
