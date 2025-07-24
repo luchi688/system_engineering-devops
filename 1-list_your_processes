@@ -1,2 +1,6 @@
+
 #!/bin/bash
-pgrep -u "$USER"
+
+#!/usr/bin/env bash
+ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest
+ 249da8f (Task 1: Display all processes in user-friendly tree format)
