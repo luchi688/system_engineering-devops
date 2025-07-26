@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2009
-ps -eo user,pid,ppid,tty,%cpu,%mem,cmd --forest | grep bash
+echo "$BASHPID"
