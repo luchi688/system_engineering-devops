@@ -1,2 +1,5 @@
 #!/usr/bin/env bash
-echo "$BASHPID"
+# This script filters and shows processes containing the word 'bash'
+# shellcheck disable=SC2009
+
+ps -ef | grep bash
