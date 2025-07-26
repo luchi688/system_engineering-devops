@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest
+# This script displays all running processes in a tree-like format
+
+ps -eo user,pid,ppid,%cpu,%mem,tty,cmd --forest
