@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# This script lists all running processes and displays only those containing the word 'bash'
-
-ps -eo user,pid,ppid,%cpu,%mem,tty,cmd | grep bash | grep -v grep
+# This script displays a list of running processes containing the word 'bash'
+ps -aux | grep bash | grep -v grep
