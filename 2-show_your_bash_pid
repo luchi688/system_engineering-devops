@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Script that shows Bash process PIDs
-# shellcheck disable=SC2009
+# This script displays the list of running processes that contain the word 'bash'
 
-ps -ef | grep "[b]ash"
+# shellcheck disable=SC2009
+ps -eo pid,comm | grep bash | grep -v grep
