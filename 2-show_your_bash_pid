@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
-# This script displays running processes containing the word 'bash'
-ps aux | grep bash | grep -v grep
+# This script shows the PID and name of all processes that include 'bash' in their name
+
+for pid in $(ls /proc | grep -E '^[0-9]+$'); do
+  if [ -r "/proc/$pid/comm" ]; then
+    name=$(cat /proc/$pid/comm)
+    if echo "$name" | grep -q "bash"; then
+      echo "$pid $name"
+    fi
+  fi
+done
