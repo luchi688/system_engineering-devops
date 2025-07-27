@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# This script displays only lines of processes containing the word 'bash'
+# Script that shows Bash process PIDs
 # shellcheck disable=SC2009
-ps -eo user,pid,ppid,%cpu,%mem,tty,cmd | grep bash
+ps -ef | grep "[b]ash"
