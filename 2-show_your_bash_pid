@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Script that displays the list of running processes and only shows lines containing the word 'bash'
+# Script that displays lines containing the word "bash"
 # shellcheck disable=SC2009
-ps -ef | grep bash | grep -v grep
+
+ps aux | grep bash
