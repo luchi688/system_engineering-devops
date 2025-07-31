@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
-# This script prints "To infinity and beyond" indefinitely every 2 seconds
+# Dispays the pid along with the process 
 
-while true
-do
-    echo "To infinity and beyond"
-    sleep 2
-done
+pgrep -l bash
