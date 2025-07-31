@@ -1,5 +1,3 @@
-#!/bin/bash
-
-for pid in $(pidof bash); do
-    echo "$pid bash"
-done
+#!/usr/bin/env bash
+# This script displays the PID(s) of the bash process
+pgrep bash
