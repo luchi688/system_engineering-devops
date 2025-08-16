@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Script that displays "To infinity and beyond" indefinitely
+# and prints "I am invincible!!!" when killed (SIGTERM)
+
+trap 'echo "I am invincible!!!"; exit' SIGTERM
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
