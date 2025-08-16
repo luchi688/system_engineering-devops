@@ -1,8 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# 5-dont_stop_me_now
+# This script traps SIGTERM and displays a message before stopping
 
-# Find the PID(s) of the 4-to_infinity_and_beyond script and kill them
-pid=$(pgrep -f "4-to_infinity_and_beyond")
+trap "echo 'Oh no, they killed me 😭'" SIGTERM
 
-if [ -n "$pid" ]; then
-  kill "$pid"
-fi
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
