@@ -1,7 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# 4-to_infinity_and_beyond
+# This script displays "To infinity and beyond" indefinitely with a sleep interval
 
 while true
 do
-  echo "To infinity and beyond"
-  sleep 2
+    echo "To infinity and beyond"
+    sleep 2
 done
